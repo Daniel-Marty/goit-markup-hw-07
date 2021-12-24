@@ -1,8 +1,22 @@
-@import url(../sass/utils/_vars.scss);
-@import url(../sass/base/_reset.scss);
-@import url(../sass/layout/_header.scss);
-@import url(../sass/layout/_hero.scss);
+@import "./utils/vars";
+@import "./utils/mixins";
+@import "./base/reset";
+@import "./utils/hidden";
+@import "./base/common";
 
-body {
-  color: yellow;
-}
+@import "./components/logo";
+@import "./components/container";
+@import "./components/button";
+
+@import "./layout/logo";
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/examples";
+@import "./layout/footer";
+@import "./layout/features";
+@import "./layout/our-team";
+@import "./layout/clients";
+@import "./layout/subscribe";
+@import "./layout/filter";
+@import "./layout/portfolio";
+@import "./layout/modal";

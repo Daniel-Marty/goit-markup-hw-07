@@ -1,0 +1,58 @@
+.button {
+  display: inline-block;
+  font-family: inherit;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  border: none;
+}
+.hero__button {
+  border-radius: 6px;
+  font-weight: 700;
+  line-height: 1.87;
+  padding: 10px 32px;
+  display: inline-block;
+  text-align: center;
+  color: var(--title-text-color);
+  background-color: var(--accent-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.filter-button {
+  border-radius: 4px;
+  color: var(--secondary-text-color);
+  background-color: var(--secondary-background-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding: 6px 22px;
+  width: auto;
+  transition: color var(--transition-time) var(--cubic-bezier),
+    background-color var(--transition-time) var(--cubic-bezier),
+    box-shadow var(--transition-time) var(--cubic-bezier);
+  &:hover,
+  &:focus {
+    color: var(--background-color);
+    background-color: var(--accent-text-color);
+    box-shadow: var(--box-shadow);
+  }
+}
+
+.filter-current {
+  color: var(--background-color);
+  background-color: var(--accent-text-color);
+  box-shadow: var(--box-shadow);
+}
+.filter-margins {
+  margin-left: 8px;
+}
+.filter-margins:first-child {
+  margin-left: 0;
+}
+.btn {
+  display: inline-block;
+}
