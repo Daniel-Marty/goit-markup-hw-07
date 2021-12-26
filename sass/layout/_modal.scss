@@ -34,7 +34,6 @@
   text-align: center;
 }
 
-
 .checkbox {
   appearance: none;
   position: absolute;
@@ -48,9 +47,10 @@
   &:checked + .checkbox__text .icon-checked {
     fill: var(--background-color);
   }
-  &:focus span {
-    border: 3px solid red;
-  }
+}
+.checkbox:focus + .checkbox__text .icon-checked {
+  border: 3px solid var(--accent-text-color);
+  // border-color: var(--accent-text-color);
 }
 
 .checkbox__link {
