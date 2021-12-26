@@ -1,29 +1,39 @@
 .logo {
+  display: inline-block;
   margin-left: 0px;
   color: var(--accent-text-color);
   text-decoration: none;
   font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+  @include font(26px, 1.19, 0.03em, 700);
 }
-.logo-header {
-  color: var(--accent-text-color);
-  padding-top: 24px;
-  padding-bottom: 25px;
-  margin-right: 93px;
-  color: var(--secondary-text-color);
-  display: inline-block;
-}
-.logo.logo-header {
-  color: var(--accent-text-color);
-}
+
 .logo-studio {
   color: #000000;
   transition: color var(--transition-time) var(--cubic-bezier);
 }
-.logo-studio:hover,
-.logo-studio:active {
-  color: var(--accent-text-color);
+
+.logo--header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 93px;
+}
+
+.logo__studio {
+  color: #000000;
+  transition: color var(--transition-time) var(--cubic-bezier);
+  &:hover,
+  &:active {
+    color: var(--accent-text-color);
+  }
+}
+.logo__studio--footer {
+  color: var(--title-text-color);
+  transition: color var(--transition-time) var(--cubic-bezier);
+  &:hover,
+  &:focus {
+    color: var(--accent-text-color);
+  }
+}
+.logo-foot-main {
+  margin-bottom: 20px;
 }

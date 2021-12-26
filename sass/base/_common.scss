@@ -10,6 +10,16 @@ body {
 }
 .current {
   color: var(--accent-text-color);
+  &::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    background-color: var(--accent-text-color);
+    border-radius: 5px;
+    left: 0;
+    bottom: -3px;
+  }
 }
 .border-main {
   padding: 30px 32px;
